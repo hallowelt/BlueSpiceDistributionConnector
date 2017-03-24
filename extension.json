@@ -34,6 +34,7 @@
 		"BeforePageDisplay": "BlueSpiceDistributionHooks::onBeforePageDisplay",
 		"MinervaPreRender": "BlueSpiceDistributionHooks::onMinervaPreRender",
 		"UserLoginForm": "BlueSpiceDistributionHooks::onUserLoginForm",
+		"SkinTemplateOutputPageBeforeExec": "BlueSpiceDistributionHooks::onSkinTemplateOutputPageBeforeExec",
 		"BSInsertMagicAjaxGetData": [
 			"BlueSpiceDistributionHooks::onBSInsertMagicAjaxGetDataCategoryTree",
 			"BlueSpiceDistributionHooks::onBSInsertMagicAjaxGetDataCite",

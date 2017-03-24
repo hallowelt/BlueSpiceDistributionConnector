@@ -207,4 +207,20 @@ It is very useful to use footnotes <ref>A note can provide an author's comments 
 
 		return true;
 	}
+
+	/**
+	 * Duplicator extension: Move duplicator link to more menu. Part of #5786
+	 * @param SkinTemplate $skin
+	 * @param BaseTemplate $template
+	 */
+	public static function onSkinTemplateOutputPageBeforeExec( &$skin, &$template ) {
+		if( !isset( $template->data['nav_urls']['duplicator'] ) ) {
+			return true;
+		}
+
+		$template->data['content_navigation']['actions'][] = array_merge(
+			$template->data['nav_urls']['duplicator'],
+			[ 'id' => 'ca-duplicator' ]
+		);
+	}
 }
