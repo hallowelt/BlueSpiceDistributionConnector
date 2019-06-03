@@ -103,6 +103,11 @@
 					"make-items-callback": "bs.hitcounters.flyout.makeItems"
 				}
 			}
+		},
+		"BlueSpiceSMWConnector": {
+			"ExtraPropertyRegistry": {
+				"hitcountersfields": "\\BlueSpice\\DistributionConnector\\HitCountersPropertyValueProvider::factory"
+			}
 		}
 	},
 	"GroupPermissions": {
@@ -117,9 +122,6 @@
 		"BlueSpiceDistributionConnector": [
 			"i18n"
 		]
-	},
-	"AutoloadNamespaces": {
-		"BlueSpice\\DistributionConnector\\" : "src/"
 	},
 	"AutoloadClasses": {
 		"BlueSpiceDistributionHooks": "includes/BlueSpiceDistributionHooks.php",
